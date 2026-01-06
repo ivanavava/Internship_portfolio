@@ -25,7 +25,7 @@ function Portfolio() {
      {/*The get api thing/ used to retrieve stuff from the backend*/}
      const [projects, setProjects] = useState([]);
      useEffect(() => {
-         fetch("http://localhost:5000/api/projects")
+         fetch("/api/projects")
            .then((res) => res.json())
            .then((data) => {
                 console.log("Fetched projects:", data)
