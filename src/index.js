@@ -10,7 +10,7 @@ import Progress from './components/progress.js';
 import Music from '../src/components/music.js'
 import Work from '../src/components/work.js'
 import WorkT from '../src/components/work2.js'
-import { createRoot } from "react-dom/client";
+//import { createRoot } from "react-dom/client";
 
 
 

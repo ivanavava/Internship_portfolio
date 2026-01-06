@@ -1,7 +1,7 @@
 //change this page to your index. it will be rendered there//
 import * as React from "react"
 import { Link, Outlet } from "react-router-dom";
-import img from '../src/aboutbackground2.png';
+//import img from '../src/aboutbackground2.png';
 import aboutFH from '../src/images/aboutmefoldershape.svg';
 import Contactimg from '../src/images/ContactFolder.svg';
 import Clock from '../src/components/clock.js';
