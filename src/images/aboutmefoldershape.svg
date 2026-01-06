@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 201 134.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        mask: url(#mask);
+      }
+
+      .cls-3, .cls-5 {
+        fill: #efeaff;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-6, .cls-5 {
+        stroke: #000;
+      }
+    </style>
+    <mask id="mask" x="110" y="0" width="91" height="31" maskUnits="userSpaceOnUse">
+      <g id="path-3-inside-1_59_176" data-name="path-3-inside-1 59 176">
+        <path class="cls-2" d="M111,16c0-8.28,6.72-15,15-15h59c8.28,0,15,6.72,15,15v15h-89v-15Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g>
+    <rect class="cls-3" y="9.72" width="200" height="124.48" rx="15" ry="15"/>
+    <rect class="cls-6" x=".5" y="10.22" width="199" height="123.48" rx="14.5" ry="14.5"/>
+  </g>
+  <path class="cls-3" d="M111,16c0-8.28,6.72-15,15-15h59c8.28,0,15,6.72,15,15v15h-89v-15Z"/>
+  <g class="cls-4">
+    <path class="cls-1" d="M110,16c0-8.84,7.16-16,16-16h59c8.84,0,16,7.16,16,16h-2c0-7.73-6.27-14-14-14h-59c-7.73,0-14,6.27-14,14h-2ZM200,31h-89,89ZM110,31v-15c0-8.84,7.16-16,16-16v2c-7.73,0-14,6.27-14,14v15h-2ZM185,0c8.84,0,16,7.16,16,16v15h-2v-15c0-7.73-6.27-14-14-14V0Z"/>
+  </g>
+  <path class="cls-5" d="M117.39,5.56c4.39-4.75,11.9-4.75,16.28,0,6.55,7.1,1.51,18.59-8.14,18.59s-14.69-11.49-8.14-18.59Z"/>
+  <path class="cls-3" d="M124,2h8c5.52,0,10,4.48,10,10h0c0,5.52-4.48,10-10,10h-8c-5.52,0-10-4.48-10-10h0c0-5.52,4.48-10,10-10Z"/>
+  <rect class="cls-3" x="101.87" y="11.1" width="43.45" height="19.85"/>
+</svg>

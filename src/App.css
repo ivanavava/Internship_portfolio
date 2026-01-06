@@ -1,0 +1,1650 @@
+/****************************************CSS MAIN PAGE*********************************/
+:root{
+  --foldersize: 11vw;
+  --fontSpline: 'Spline Sans Mono';
+  --fontInter: "Inter", sans-serif;
+  --leftFolderPosition: 90vw;
+  --folderWidth: 13vw;
+  --headerViewSpeecialHelp: 455;
+  --labelSize: 1em;
+  --portPurple: rgba(186, 180, 208, 1);
+  --buttonColor: #363636;
+  --strokeOutline: 1px;
+}
+
+/*all devices4now*/
+
+@media (min-width: 1024px){ 
+  
+
+  html{
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    min-width: 800px; /* Minimum width */
+    min-height: 600px; /* Minimum height */
+  }
+
+ 
+
+  .App{
+    display:grid;
+    grid-template-areas: 
+    'header'
+    'main';
+    padding:none;
+    row-gap: 0;
+    position: relative;
+    padding: none;
+    /*overflow-x: hidden;*/
+    }
+    
+
+    
+    /***********************************css for the top bar thing***************************************/
+    
+    .header{
+      z-index: 3; 
+      display: 'flexbox';
+      flex-direction: row;
+      grid-area: 'header';
+      background-color: rgb(230, 230, 230);
+      box-sizing: border-box;
+      border-bottom: 1px solid #000000;
+      padding: none;
+      padding-bottom: none;
+      width: 100vw;
+    }
+    
+    .homelink {
+      font-family: 'Bungee Shade';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4em;
+      line-height: 30px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.07em;
+      color: #8278A5;
+      text-shadow: 1px 0 10px white;
+      display: inline-block;
+      padding-right: 3.5vw;
+      padding-left: 1.5vw;
+      padding-top: none;
+      padding-bottom: none;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+    
+    .view{
+      order:2;
+      font-family: var(--fontSpline);
+      font-style: normal;
+      font-size: 0.9em;
+      font-weight: var(--headerViewSpeecialHelp);
+      line-height: 1em;
+      letter-spacing: 0.07em;
+      color: #000000;
+      text-decoration: none;
+      display: inline-block;
+      padding-right: 1.5vw;
+      vertical-align: middle;
+      padding-top: none;
+      padding-bottom: none;
+    }
+    
+    .special{
+      font-family: var(--fontSpline);
+      font-style: normal;
+      font-size: 0.9em;
+      font-weight: var(--headerViewSpeecialHelp);
+      line-height: 1em;
+      letter-spacing: 0.07em;
+      color: #000000;
+      text-decoration: none;
+      display: inline-block;
+      padding-right: 1.5vw;
+      vertical-align: middle;
+      padding-top: none;
+      padding-bottom: none;
+    
+    }
+    
+    .help {
+      font-family: var(--fontSpline);
+      font-style: normal;
+      font-size: 0.9em;
+      font-weight: var(--headerViewSpeecialHelp);
+      line-height: 1em;
+      letter-spacing: 0.07em;
+      color: #000000;
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: none;
+      padding-bottom: none;
+    }
+    
+    
+    .headerSecondSection{
+      flex-direction: row;
+      column-gap: 0.85vw;
+      display: inline-block;
+      padding-left: 43vw;
+      padding-top: none;
+      padding-bottom: none;
+    
+    }
+    
+    
+    .wifiicon{
+      width: 1.6vw;
+      height: 3.2vh;
+      padding: none;
+      z-index: 4;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 1.1vw;
+    
+    }
+    
+    .batteryicon{
+      width: 1.7vw;
+      padding: none;
+      z-index: 4;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 1.1vw;
+    }
+    
+    .time{
+      line-height: 1em;
+      font-family: var(--fontSpline);
+      font-size: 0.9em;
+      font-weight: 425;
+      display: inline-block;
+      vertical-align: middle;
+    
+    }
+    
+    
+    /*********************************************MAIN PAGE BODY*****************************************************/
+    
+    .body{
+      grid-area: 'main';
+      width: 100vw;
+      padding: none;
+      margin-left: 0;
+      margin-top: 0;
+  
+    }
+    
+    
+    .backgroundimg{
+      position: relative;
+      background-color: white;
+      padding: none;
+    }
+
+    .backgroundimg::before{
+      background-image: url('../src/aboutbackground2.png');
+      background-size: cover;
+      content:'';
+      position: absolute;
+      inset: 0;
+      opacity: 30%;
+      width: 100vw; 
+    }
+    
+    .RowStructure{
+      grid-area: 'main';
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100vw;
+      top:8.7vh;
+      margin-top: auto;
+      z-index: 3;
+      padding: none;
+      column-gap: 4vw;
+      padding-bottom: 12vh;
+      isolation: isolate;
+      overflow-x: hidden;
+    }
+
+    .IconFolder{
+      order:1;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15vh;
+      padding-top: none;
+    }
+
+    .MusicIcon{
+      order:1;
+      text-decoration: none;
+      text-align: center;
+      padding-top: none;
+      
+    }
+    
+    .Musicimg{
+      width: 6.5vw; 
+    }
+    
+    .Musiclabel{
+      font-family: var(--fontSpline);
+      font-size: 0.9em;
+      font-weight: 350;
+      letter-spacing: 0.003em;
+      color: #000000;
+      text-decoration: none;
+      margin-top: 1vh;
+    }
+
+    .PhotoShopIcon{
+      order:2;
+      text-decoration: none;
+      text-align: center;
+    
+    }
+
+    .PhotoShopimg{
+      width: 7.7vw;
+    }
+
+    .PhotoShopLabel{
+      font-family: var(--fontSpline);
+      font-size: 0.9em;
+      letter-spacing: 0.07em;
+      font-weight: 350;
+      letter-spacing: 0.05em;
+      color: #000000;
+      text-decoration: none;
+      margin-top: 1vh;
+    }
+
+    .ContactFolder{
+      order:3;
+      text-decoration: none;
+      padding-top: 5vh;
+      padding-left: 15%;
+      padding-bottom: 6vh;
+      
+    }
+
+    .Contactimg{
+      width: var(--folderWidth);
+      
+    }
+
+    .ContactLabel{
+      font-family: var(--fontSpline);
+      font-size: 0.9em;
+      letter-spacing: 0.07em;
+      font-weight: 350;
+      color: #000000;
+      text-decoration: none;
+      margin-top: 1vh;
+      margin-left: 2vw;
+      text-align: center;
+      align-self: end;
+    }
+
+
+    
+    .ThingInCenter{
+      order: 2;
+      width: 61.7vw;
+    }
+    
+    
+    .ColumnFolder{
+      order:3;
+      display: 'flexbox';
+      flex-direction: "column";
+      row-gap: -8vh; /*****************here************************************************/
+    
+      }
+    
+    .AboutmeHome{
+      order:1;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    .AboutmeFolderHome{
+      width: var(--folderWidth);
+    }
+
+    .AboutLabel{
+      font-family: var(--fontSpline);
+      font-size: 0.9em;
+      letter-spacing: 0.07em;
+      font-weight: 350;
+      letter-spacing: 0.05em;
+      color: #000000;
+      text-decoration: none;
+      margin-top: 1vh;
+    }
+    
+    
+    .PortfolioHome{
+      order:2;
+      text-decoration: none;
+      text-align: center;
+    } 
+
+    .PortfolioFolderHome{
+      width: var(--folderWidth);
+    }
+
+    .PortfolioLabel{
+      font-family: var(--fontSpline);
+      font-size: 0.9em;
+      letter-spacing: 0.07em;
+      font-weight: 350;
+      letter-spacing: 0.05em;
+      color: #000000;
+      text-decoration: none;
+      margin-top: 1vh;
+    }
+
+    .ResumeHome{
+      order:3;
+      text-decoration: none;
+      text-align: center;
+      
+    } 
+
+    .ResumeFolderHome{
+      width: var(--folderWidth);
+      margin-top: 0.7vh;
+    }
+
+    .ResumeLabel{
+      font-family: var(--fontSpline);
+      font-size: 0.9em;
+      letter-spacing: 0.07em;
+      font-weight: 350;
+      letter-spacing: 0.05em;
+      color: #000000;
+      text-decoration: none;
+      margin-top: 1vh;
+    }
+    
+ 
+
+    /*********************************************MAIN PAGE FOOTER**********************************************/
+    
+    .footer{
+      z-index: 3;
+      display: 'flexbox';
+      flex-direction: row;
+      background-color: rgb(230, 230, 230);
+      box-sizing: border-box;
+      height: 4vh;
+      border-top: 0.07em solid #000000;
+      border-bottom: 0.07em solid #000000;
+      padding: none;
+      text-align: center;
+      vertical-align: middle;
+      width: 100vw;
+      margin-top: 0;
+    }
+
+    .email{
+      font-family: var(--fontSpline);
+      font-style: normal;
+      font-size: 0.8em;
+      font-weight: 425;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      text-decoration: none;
+      padding-left: 0;
+      letter-spacing: 0.15em;
+      vertical-align: middle;
+    }
+
+
+  /*******************************************CSS ABOUT CENTER*****************************************/
+
+  .AboutThing{
+    position: relative;
+    width: 64vw;
+    margin-top: 4vh;
+    margin-left: 0vw;
+    align-items: stretch;
+    z-index: 10;
+  }
+
+  .BackgroundAboutImg{
+    width: 64vw
+       
+  }
+
+  .AboutContent{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -64.2%;
+    margin-left: 7%;
+    column-gap: 20vw;
+  }
+
+  .SelfPortrait{
+    padding-top: 12vh;
+    width: 20vw;
+    margin-bottom: 10vh;
+  }
+
+  .ColumnContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+
+  .Buttons{
+    order: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10vw ;
+    column-gap: 0.96vw;
+    text-decoration: none;
+  }
+
+  .Green{
+    width: 2vw;
+  }
+
+  .Yellow{
+    width: 2vw;
+  }
+
+  .Red{
+    width: 2vw;
+  }
+
+  .AbmeTittle{
+    order: 2;
+    font-family: var(--fontSpline);
+    font-size: 2em;
+    font-weight: 500;
+    margin-left: -13vw;
+    margin-top: 8vh;
+    letter-spacing: 0.15vw;
+    padding-top: none;
+    
+  }
+
+  .ABmeText{
+    order: 3;
+    font-family:var(--fontInter);
+    font-size: 0.8em;
+    letter-spacing: 0.1vw;
+    line-height: 200%;
+    font-weight: 350;
+    margin-left: -13vw;
+    margin-top: -3vh;
+    width: 25vw;
+
+  }
+
+  .GotIt{
+    order:4;
+    position: relative;
+    width: 80px;
+    height: 38px;
+    box-sizing: border-box;
+    background: #EFEAFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 4.5vw;
+    margin-top: -1vh;
+  }
+
+  .LinkGotIt{
+    text-decoration: none;
+    font-family: var(--fontSpline);
+    color: var(--buttonColor);
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+
+
+
+  /*****************************************************PORTFOLIO********************************************/
+  .PortfolioThing{
+    position: relative;
+    margin-top: 2vh;
+    margin-left: 0.7vw;
+    align-items: stretch;
+  }
+
+  .BackgroundPortfolioImg{
+    display: flex;
+    width: 70vw;
+    margin-left: -4vw;
+    margin-top: 0vh;
+    
+  }
+
+  .PortfolioContentColumn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    width: 70vw;
+    height: auto;
+    z-index: 6;
+    top: 3.7vh;
+    left: -1.7vw;
+    
+  }
+
+  .PortRow1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5vw;
+    margin-top: -0.5vh;
+  }
+
+
+  .PArrows{
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5vw;
+  }
+
+  .LArrow{
+    width: 2.1vw;
+  }
+
+  .RArrow{
+    width: 2.1vw;
+  }
+
+  .ListGridView{
+    order:2;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .LView{
+    width: 2.3vw;
+  }
+  .GView{
+    width: 2.3vw;
+  }
+
+
+  .PortfolioButtons{
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.7vw;
+    text-decoration: none;
+    padding-left: 46.7vw;
+    padding: none;
+    padding-top: 0.1vh;
+  }
+
+  .PBttn{
+    width: 2.0vw;
+  }
+
+  .PortfolioIframe{
+    padding-top: 1.5vh;
+    width: 600;
+    height: 200vh;
+    border: none;
+  }
+
+  .PortContent{
+    display: flex;
+    flex-direction: grid;
+
+  }
+
+  .PortRow2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*
+
+
+  .ScrollPort{
+    order:2;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 3vh;
+    margin-left: 66.16vw;
+    display:none;
+
+  } */
+
+  /******************************************PORTScroll**************************************************/
+  
+ .ContentScroll{
+  isolation: isolate;
+  display: flex;
+  order: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: -78.8vh;
+  margin-left: -1.92vw;
+  width: 67.3vw;
+  height: 76vh;
+  border: none;
+ }
+
+.ContentScroll::-webkit-scrollbar {
+  width: 1.2vw;
+  height: 90vh;
+  }
+  
+
+ .ContentScroll::-webkit-scrollbar-thumb{
+  background-image: url("../src/images/ScrollPort.svg"),
+  linear-gradient(100deg, transparent, transparent);
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  border-top: solid transparent 2px;
+ } 
+
+ .ContentScroll::-webkit-scrollbar-button:single-button:decrement{
+  background-image: url("../src/images/PortUpArrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+ }
+
+ .ContentScroll::-webkit-scrollbar-button:single-button:increment{
+  background-image: url("../src/images/PortDownArrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+ }
+
+ .ContentPortGrid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1vh;
+  column-gap: 6vw;
+  padding-right: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .ContentItemLink1{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  font-family: var(--fontSpline);
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4vh;
+ }
+
+
+ .ContentItemLink{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  font-family: var(--fontSpline);
+  text-align: center;
+  text-decoration: none;
+
+ }
+
+ .ContentImage{
+  width: 14.93vw;
+  height: 31.15vh;
+  border-radius: 5%;
+  background-color: rgba(217, 217, 217, 1);
+  border:  solid black 1px;
+  margin-top: 5vh;
+ }
+
+ .ItemName{
+  padding-top: 1vh;
+  font-size: 0.9em;
+  color: black;
+ }
+
+ .ItemSize{
+  font-weight: 100;
+  font-size: 0.8em;
+  color: black;
+ }
+
+
+/*************************************RESUME PAGE***************************************************/
+
+.ResumeThing{
+  position: relative;
+  width: 60vw;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  align-items: stretch;
+}
+
+.BackgroundResumeImg{
+  width: 60vw;
+}
+
+.ResumeContentColumn{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 2.1vh;
+  width: 60vw;
+}
+
+.ResumeButtons{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50vw;
+  column-gap: 0.96vw;
+}
+
+.RBttn{
+  width: 2vw;
+}
+
+.ResumeContentRow{
+  display: flex;
+  flex-direction: row;
+  column-gap: 4vw;
+}
+
+.ResumePDF{
+  order:1;
+  display: flex;
+  width: 62.5vw;
+  height: 74vh;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  border: solid black 1px;
+  margin-top: 7vh;
+  margin-left: 4vw;
+}
+
+.ResumeLeftColumn{
+  order:2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.ResumeTittle{
+  font-family: var(--fontSpline);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  font-size:28px;
+}
+
+.ResumeText{
+  font-family: var(--fontInter);
+  font-size: 14px;
+  letter-spacing: 0.035em;
+  line-height: 190%;
+  font-weight: 380;
+  margin-right: 5vw;
+  margin-top: 0;
+}
+
+.ResumeConditionBox{
+  display: flex;
+  margin-top: 2vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 27vw;
+  height: 29vh;
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 5px;
+  
+}
+
+.ConditionBoxText{
+  font-family: var(--fontInter);
+  font-weight: 400;
+  font-size: 0.688rem;
+  line-height: 190%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+}
+
+.ResumeConditionBox::-webkit-scrollbar {
+  width: 1.3vw;
+  height: 25px;
+
+  
+  }
+
+.ResumeConditionBox::-webkit-scrollbar-track{
+  background-color: white;
+  border: solid black 1px;
+  border-right: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  
+} 
+  
+
+.ResumeConditionBox::-webkit-scrollbar-thumb{
+  background-image: url("../src/images/ResumeScroll.svg"),
+  linear-gradient(100deg, transparent, transparent);
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  border-left: solid transparent 0.125rem;
+  border-right: solid transparent 0.063rem;
+  border-top: solid transparent 1px;
+  border-bottom: solid transparent 2px;
+ } 
+
+
+ .ResumeConditionBox::-webkit-scrollbar-button:single-button:decrement{
+  background-image: url("../src/images/uparrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-left: solid black 1px;
+  border-right: solid transparent 1px;
+  padding-top: solid white 1px;
+  height: 9.5px;
+  margin: 2px;
+ }
+
+ .ResumeConditionBox::-webkit-scrollbar-button:single-button:increment{
+  background-image: url("../src/images/downarrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-left: solid black 1px;
+  border-right: solid transparent 1px;
+  border-bottom: solid transparent 1px;
+  padding-bottom: 1px white;
+  height: 9.5px;
+  margin: 2px;
+  
+ }
+
+.RadioButtonsColumn{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  row-gap: 2vh;
+}
+
+.radioblock1{
+  display: inline;
+  margin-top: 2vh;
+}
+
+
+.ResumeChecking{
+  align-self: flex-start;
+}
+
+.ResumeHiring{
+  align-self: flex-start;
+}
+
+.ResumeOpt{
+font-family: var(--fontInter);
+font-size: 12px;
+vertical-align:top;
+}
+
+.ResumeGotIt{
+  position: relative;
+  width: 13vw;
+  height: 6vh;
+  box-sizing: border-box;
+  background: rgba(226, 239, 228, 1);
+  border: 1px solid #000000;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-left: 14.3vw;
+  margin-top: 0vh;
+  font-family: var(--fontSpline);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--buttonColor);
+}
+
+
+/***********************************************CONTACT PAGE************************************************/
+.ContactThing{
+  position: relative;
+
+}
+
+.ContactBackground{
+  width: 72vw;
+  margin-left: -6.8vw;
+  margin-top: 8vh;
+  
+}
+
+.ContactOverlay{
+  position: absolute;
+  flex-direction: inline;
+  width: 72vw;
+  height: 70vh;
+  flex: inline-block;
+  top: 5.3vh;
+  left: -6.8vw;
+
+}
+
+
+.ContactButtons{
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.9vw;
+  margin-left: 62.2vw;
+  margin-top: 4.8vh;
+
+}
+
+.CBttn{
+  width: 2.1vw;
+}
+
+.ContactSepThing{
+  display: flex;
+  position: relative;
+  width: 71.4vw;
+  height: 2vh;
+  border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 5vh;
+  margin-left: 0.3vw;
+
+
+}
+.ContactRow{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding-bottom: 2vh;
+}
+
+/*here*******************************************************************/
+.MessageColumn{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 2vw;
+  top: -6.5vh;
+  /*border-right: solid black 1px;*/
+  border-radius: 0px;
+  min-height: 100%;
+}
+
+.Mssgs{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8vh;
+  width: 17.5vw;
+  height: 74vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 4;
+  padding-right: 12px;
+}
+
+.Mssgs::-webkit-scrollbar{
+  width: 1.6vw;
+}
+
+.Mssgs::-webkit-scrollbar-track{
+  background-color: transparent;
+  border: solid black 1px;
+  border-right: solid black 1px;
+  border-left:  solid black 1px;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-top: -16px;
+  height: 100px;
+}
+
+.Mssgs::-webkit-scrollbar-button:single-button:decrement{
+  background-image: url("../src/images/ContactScrollUp.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-left: solid black 0.5px;
+  border-right: solid transparent 0.5px;
+  height: 15px;
+ }
+
+
+.Mssgs::-webkit-scrollbar-thumb{
+  background-image: url("../src/images/TryThisContactScroll.svg"),
+  linear-gradient(100deg, transparent, transparent);
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  border-left: solid transparent 5px;
+  border-right: solid transparent 5px;
+  border-top: solid transparent 1px;
+  border-bottom: solid transparent 2px;
+  
+ } 
+
+ .Mssgs::-webkit-scrollbar-button:single-button:increment{
+  background-image: url("../src/images/ContactScrollDown.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid transparent 1px;
+  height: 15px;
+
+ }
+
+ .NewMsgnSearch{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.9vh;
+}
+
+.SearchBar{
+  border: 0.08em solid rgb(0, 0, 0, 0.5);
+  height: 2.5vh;
+  border-radius: 5px;
+  margin-top: 0.3vh;
+  width: 12vw;
+  margin-left: -0.7vw;
+  z-index: 3;
+
+}
+
+.SearchBar::placeholder{
+  color: #B1B1B1;
+  font-family: var(--fontInter);
+  font-size: 10px;
+}
+
+.SearchIcon{
+  width: 16px;
+  margin-left: -20px;
+  margin-top: 4px;
+  position: absolute;
+  z-index: 5;
+}
+
+.Nmessage{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1px;
+}
+
+.NMIcon{
+  width: 2.7vw;
+}
+
+.FirstmsgnIcon{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1vw;
+  margin-top: 23vh;
+}
+
+.PinIcon{
+  width: 29px;
+  margin-top: -28px;
+}
+
+.PreviousMessage1{
+  display: flex;
+  flex-direction: column;
+  margin-top: -15vh;
+  text-decoration: none;
+  color: #000000;
+  /*border-bottom: solid rgba(148, 148, 148, 0.7) 0.04rem;*/
+  width: 17vw;
+  height: 10vh;
+}
+
+.MessageSentDate{
+  font-family: var(--fontInter);
+  font-size: 10px;
+  color:#878787; ;
+  font-weight: 300;
+  margin-top: 10vh;
+  margin-left: -3.5vw;
+  isolation: isolate;
+}
+
+
+.MessangerName{
+  font-family: var(--fontSpline);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.MMessage1{
+  font-family: var(--fontInter);
+  font-size: 12px;
+  color: #878787;
+  margin-top: -2px;
+}
+
+
+.PreviousMessage2{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #000000;
+  width: 17vw;
+  margin-top: 10vh;
+  height: 10vh;
+}
+
+.MessageSentDate2{
+  font-family: var(--fontInter);
+  font-size: 10px;
+  color:#878787; ;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-left: 124px;
+}
+
+.MMessage2{
+  font-family: var(--fontInter);
+  font-size: 12px;
+  color: #878787;
+  margin-top: 2px;
+}
+
+.Cline0{
+  display: flex;
+  position: relative;
+  background-color:rgba(148, 148, 148, 0.5) ;
+  height:0.03rem ;
+  margin-left: -20vw;
+  margin-top:-2.7vh ;
+  width: 18.2vw;
+  display: none;
+}
+
+.Cline1{
+  display: flex;
+  position: relative;
+  background-color:rgba(148, 148, 148, 0.5) ;
+  height:0.03rem ;
+  margin-left: -18.2vw;
+  margin-top:8.5vh ;
+  width: 18.2vw;
+  display: none;
+}
+
+.Cline2{
+  display: flex;
+  position: relative;
+  background-color:rgba(148, 148, 148, 0.5) ;
+  height:0.03rem ;
+  margin-left: -18.2vw;
+  margin-top:19.4vh ;
+  width: 18.2vw;
+  display: none;
+}
+
+
+.NomoreMsgs{
+  height: 365px;
+  vertical-align: middle;
+  width: 100px;
+  border: solid transparent 50px;
+ 
+}
+
+.NoMore{
+  font-family: var(--fontInter);
+  color: #B0B0B0;
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 300px;
+}
+
+.Invisible{
+  color: transparent;
+}
+
+/******************************************************PROGRESS***********************************************/
+
+.ProgressScroll{
+  isolation: isolate;
+  display: flex;
+  order: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: -78.5vh;
+  margin-left: -1.92vw;
+  width: 67.3vw;
+  height: 76vh;
+  border: none;
+ }
+
+ .ProgressScroll::-webkit-scrollbar {
+  width: 1.2vw;
+  height: 90vh;
+  }
+  
+
+  .ProgressScroll::-webkit-scrollbar-thumb{
+  background-image: url("../src/images/TryProgress.svg"),
+  linear-gradient(100deg, transparent, transparent);
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  border-top: solid transparent 2px;
+ } 
+
+ .ProgressScroll::-webkit-scrollbar-button:single-button:decrement{
+  background-image: url("../src/images/PortUpArrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+ }
+
+ .ProgressScroll::-webkit-scrollbar-button:single-button:increment{
+  background-image: url("../src/images/PortDownArrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+ }
+
+
+ /***********************************************MUSIC********************************************/
+
+ .MusicBackgroundImg{
+  position: relative;
+  width: 72vw;
+  margin-left: -6.8vw;
+ }
+
+ 
+
+}
+
+@media (min-width: 1366px){
+  #contactScrollImg{stroke-width: 0.0625rem;}
+}
+
+
+/****************************************************WORKTEXTWINDOW********************************************/  
+
+.WorkTextWindow{
+position: relative;
+box-sizing: border-box;
+width: 80vw;
+height: 94vh;
+left: -150px;
+top: 18px;
+background: #FAFAFA;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+.TopControls {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.7vw;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1.5vh;
+}
+
+.TopText1{
+  order: 1;
+  font-family: var(--fontInter);
+  font-weight: 350;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.TopText2{
+  order: 2;
+  font-family: var(--fontInter);
+  font-weight: 350;
+  padding-right: 1vw;
+}
+
+.TopText3{
+  order: 3;
+  font-family: var(--fontInter);
+  font-weight: 350;
+}
+
+.GreyBox1{
+order:4;
+width: 14vw;
+height: 25px;
+background: rgba(217, 217, 217, 0.88);
+border-radius: 5px;
+margin-left: 0.3vw;
+}
+
+.WorkBoxTittle{
+order:5;
+font-family: 'Spline Sans Mono';
+font-style: normal;
+font-weight: 500;
+font-size: 1.5rem;
+line-height: 5vh;
+letter-spacing:0.0em;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+padding-left: 0.5vw;
+padding-right: 0.5vw;
+}
+
+.GreyBox2{
+order: 6;
+background: rgba(217, 217, 217, 0.88);
+border-radius: 5px;
+width: 25vw;
+height: 25px;
+}
+
+.WGreenYellowRed{
+  order: 7;
+  margin-left: 0.1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.7vw;
+  margin-right: 0.7vw;
+}
+
+.SeperationLine{
+  width: 100%;
+  border: #000000 solid 0.5px;
+  margin-top: 1.3vh;
+
+}
+
+.SecondControls{
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.4vw;
+  margin-top: 1.5vh;
+  column-gap: 1vw;
+  align-items: center;
+  padding-bottom: 0.2vw;
+
+}
+
+.SaveIcon{
+  width: 4.1vh;
+}
+
+.Septext1{
+  height: 4.2vh;
+  width: 0vh;
+  border: #CBCBCB solid 0.5px ;
+
+}
+
+.FontDeco{
+  display: flex;
+  flex-direction: row;
+  width: 6.5vw;
+  height: 4vh;
+  border: #000000 solid 1px;
+  border-radius: 3px;
+}
+
+
+.DropDownF{
+  padding-left: -0.7vw;
+  width: 90%;
+}
+
+.FontSize{
+  display: flex;
+  flex-direction: row;
+  width: 4vw;
+  height: 4vh;
+  border: #000000 solid 1px;
+  border-radius: 3px;
+  margin-left: -0.4vw;
+}
+
+.FSize{
+  font-family: var(--fontInter);
+  font-weight: 370;
+  align-items: center;
+  padding-left: 0.6vw;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.DropDownS{
+  padding-left: 0vw;
+  width: 90%;
+}
+
+.Font{
+  font-family: var(--fontInter);
+  font-weight: 370;
+  align-items: center;
+  padding-left: 0.3vw;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Septext2{
+  height: 4.2vh;
+  width: 0vh;
+  border: #CBCBCB solid 0.5px ;
+  margin-left: -0.3vw;
+  
+}
+
+
+.SeperationLine2{
+  margin-top: 1vh;
+  width: 100%;
+  border: #000000 solid 0.5px;
+}
+
+
+.BoldItalicUnderlined{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.3vw;
+}
+
+.Bold{
+  text-decoration: none;
+  color: Black;
+  font-family: "Bona Nova", serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  padding-left: 0.5vw;
+}
+
+.Italic{
+  text-decoration: none;
+  color: Black;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 1.45rem;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.Underlined{
+  text-decoration: none;
+  color: Black;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 1.45rem;
+  text-decoration: none;
+}
+
+.Septext3{
+  height: 4.2vh;
+  width: 0vh;
+  border: #CBCBCB solid 0.5px ;
+  margin-left: 0.5vw;
+}
+
+
+.TextBackground{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vh;
+  height: 76%;
+  width: 98%;
+  background-color: #CECDCD;
+  border-top: none;
+  border-left: none;
+  border-right: #000000 solid 1px;
+  border-bottom: #000000 solid 1px;
+
+}
+
+.BackgroundColumn{
+ isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 0vh;
+  margin-left: 5vw;
+  width: 95.45%;
+  border: none;
+ 
+}
+
+.BackgroundColumn::-webkit-scrollbar {
+  width: 1.2vw;
+  height: 90vh;
+  }
+
+
+.BackgroundColumn::-webkit-scrollbar-thumb{
+  background-image: url("../src/images/ScrollPort.svg"),
+  linear-gradient(100deg, transparent, transparent);
+  background-position: center bottom, center -0px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  border-top: solid transparent 2px;
+}
+.BackgroundColumn::-webkit-scrollbar-button:single-button:decrement{
+  background-image: url("../src/images/PortUpArrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+}
+
+.BackgroundColumn::-webkit-scrollbar-button:single-button:increment{
+  background-image: url("../src/images/PortDownArrow.svg");
+  background-position: center bottom, center -40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+ }
+
+
+
+.Page1Paper{
+  height: 98vh;
+  margin-left: 17vw ;
+  margin-right: 17vw;
+  z-index: 2;
+}
+
+.Page2Paper{
+  height: 98vh;
+  margin-left: 17vw ;
+  margin-right: 17vw;
+  z-index: 2;
+}
+
+
+.Page3Paper{
+  height: 98vh;
+  margin-left: 17vw ;
+  margin-right: 17vw;
+  z-index: 2;
+}
+
+.Page4Paper{
+  height: 98vh;
+  margin-left: 17vw ;
+  margin-right: 17vw;
+  z-index: 2;
+}
+
+.Page5Paper{
+  height: 98vh;
+  margin-left: 17vw ;
+  margin-right: 17vw;
+  z-index: 2;
+}
+
+.Page1Work2{
+  margin-top: 3vh;
+  margin-left: 2vw;
+  height: 70vh;
+  z-index: 2;
+}
+
+.Page2Work2{
+  height: 70vh;
+  z-index: 2;
+  margin-left: 2vw;
+}
+
+.Page3Work2{
+  height: 70vh;
+  z-index: 2;
+  margin-left: 2vw;
+}
+
+.Page4Work2{
+  height: 70vh;
+  z-index: 2;
+  margin-left: 2vw;
+}
+
