@@ -1,3 +1,5 @@
+
+// Pixel Playground assignment
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet } from "react-router-dom";
 import GBttn from '../images/GreenWindowBttn.svg';
@@ -10,11 +12,11 @@ import Dropdown from '../images/dropdownfont.svg';
 
 
 
-import figport1 from '../workcontent/1.png';
-import figport2 from '../workcontent/2.png';
-import figport3 from '../workcontent/3.png';
-import figport4 from '../workcontent/4.png';
-
+import figport1 from '../workcontent/PixelPlayground/Pixel Playground Cover.png';
+import figport2 from '../workcontent/PixelPlayground/Pixel PlaygroundIntro.png';
+import figport3 from '../workcontent/PixelPlayground/Pixel Playground2.png';
+import figport4 from '../workcontent/PixelPlayground/Pixel Playground3.png';
+import figport5 from '../workcontent/PixelPlayground/Pixel Playground4.png';
 //import Work1 from '../Dystopian currency assignment.pdf'
 
 
@@ -26,7 +28,7 @@ import figport4 from '../workcontent/4.png';
 //css
 import '../App.css';
 
-function WorkT() {
+function PixelPlayground() {
     return (
         <div className='WorkTextWindow'>
             <div className='TopControls'>
@@ -95,6 +97,7 @@ function WorkT() {
                          <img className='Page2Work2' src= {figport2}></img>
                          <img className='Page3Work2' src= {figport3}></img>
                          <img className='Page4Work2' src= {figport4}></img>
+                         <img className='Page5Work2' src= {figport5}></img>
                     </div>
 
                 </div>
@@ -104,4 +107,4 @@ function WorkT() {
     );
 }
 
-export default WorkT;
+export default PixelPlayground;

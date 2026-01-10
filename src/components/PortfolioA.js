@@ -1,3 +1,5 @@
+
+// Portfolio assignment
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet } from "react-router-dom";
 import GBttn from '../images/GreenWindowBttn.svg';
@@ -10,11 +12,11 @@ import Dropdown from '../images/dropdownfont.svg';
 
 
 
-import dystopy1 from '../workcontent/DystopianCurrency/1dystopy.png';
-import dystopy2 from '../workcontent/DystopianCurrency/2dystopy.png';
-import dystopy3 from '../workcontent/DystopianCurrency/3dystopy.png';
-import dystopy4 from '../workcontent/DystopianCurrency/4dystopy.png';
-import dystopy5 from '../workcontent/DystopianCurrency/5dystopy.png';
+import figport1 from '../workcontent/1.png';
+import figport2 from '../workcontent/2.png';
+import figport3 from '../workcontent/3.png';
+import figport4 from '../workcontent/4.png';
+
 //import Work1 from '../Dystopian currency assignment.pdf'
 
 
@@ -26,7 +28,7 @@ import dystopy5 from '../workcontent/DystopianCurrency/5dystopy.png';
 //css
 import '../App.css';
 
-function Work() {
+function WorkT() {
     return (
         <div className='WorkTextWindow'>
             <div className='TopControls'>
@@ -91,12 +93,10 @@ function Work() {
             <div className='TextBackground'>
                 <div className='BackgroundColumn'>
                      <div className='Paper'>
-                         <img className='Page1Paper' src= {dystopy1}></img>
-                         <img className='Page2Paper' src= {dystopy2}></img>
-                         <img className='Page3Paper' src= {dystopy3}></img>
-                         <img className='Page4Paper' src= {dystopy4}></img>
-                         <img className='Page5Paper' src= {dystopy5}></img>
-
+                         <img className='Page1Work2' src= {figport1}></img>
+                         <img className='Page2Work2' src= {figport2}></img>
+                         <img className='Page3Work2' src= {figport3}></img>
+                         <img className='Page4Work2' src= {figport4}></img>
                     </div>
 
                 </div>
@@ -106,4 +106,4 @@ function Work() {
     );
 }
 
-export default Work;
+export default WorkT;

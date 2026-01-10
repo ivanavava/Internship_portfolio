@@ -1,7 +1,7 @@
-//Progress page
-import React, { useState, useEffect } from 'react';
+//Portfolio page
+import React from 'react';
 import { Link, Outlet } from "react-router-dom";
-import PortfolioWindow from '../images/PortfolioThing.svg';
+import ProgressThing from '../images/PortfolioThing.svg';
 import LeftA from '../images/LeftArrow.svg';
 import RightA from '../images/RightArrow.svg';
 import LView from '../images/ListView.svg';
@@ -10,6 +10,11 @@ import GBttn from '../images/GreenWindowBttn.svg';
 import YBttn from '../images/YellowWindowBttn.svg';
 import RBttn from '../images/RedWindowBttn.svg';
 import ScrollPort from '../images/ScrollPort.svg';
+import AssignmentWork1 from '../workcontent/Webshot.png'
+import AssignmentWork2 from '../workcontent/PortfolioScreenshot2.png';
+import AssignmentWork3 from '../workcontent/PixelPlaygroundShot.png';
+import AssignmentWork4 from '../workcontent/DystopianCurrency.png'
+
 
 
 
@@ -20,29 +25,14 @@ import ScrollPort from '../images/ScrollPort.svg';
 //css
 import '../App.css';
 
-function Portfolio() {
-
-     {/*The get api thing/ used to retrieve stuff from the backend*/}
-     const [projects, setProjects] = useState([]);
-     useEffect(() => {
-         fetch("/api/projects")
-           .then((res) => res.json())
-           .then((data) => {
-                console.log("Fetched projects:", data)
-                setProjects(data)
-        }) // or set state
-           .catch((err) => console.error(err));
-       }, []);
-       
-       
-
+function Progress() {
     return(
 
         /*Portfolio section*/
         <div className="PortfolioThing">
 
             {/*Background image*/}
-            <img className='BackgroundPortfolioImg'src={PortfolioWindow}></img>
+            <img className='BackgroundPortfolioImg'src={ProgressThing}></img>
 
             <div className='PortfolioContentColumn'>
 
@@ -89,29 +79,59 @@ function Portfolio() {
                 </div>
 
                 <div className='PortRow2'>
-                    {/*<img className='ScrollPort' src={ScrollPort}/>*/}
+                    <img className='ScrollPort' src={ScrollPort}/>
                 </div>
 
             </div>
 
-            <div className='ContentScroll'>
+            <div className='ProgressScroll'>
 
                 <div className='ContentPortGrid'>
                     {/*USE FOR LOOP LOGIC HERE FOR CONTENT*/}
 
-                     {projects.map((project) => (
+                    
+                   
 
-                    <Link className='ContentItemLink' to={project.mediaUrl}>
-                        <div className='ContentImage'></div>
-                        <label className='ItemName'>{project.title}</label>
-                        <label className='ItemSize'>{project.size}</label>
+                    <Link className='ContentItemLink1' to='/WebshopA'>
+                        <div className='ContentImage' >
+                            <img className='AssignmentShot' src={AssignmentWork1}></img>
+                        </div>
+                        <label className='ItemName'>Webshop UX <br></br>Challenge</label>
+                        <label className='ItemSize'>26 KB</label>
                     </Link>
 
-                     ))}
+                    <Link className='ContentItemLink1' to='/PortfolioA'>
+                        <div className='ContentImage' >
+                            <img className='AssignmentShot' src={AssignmentWork2}></img>
+                        </div>
+                        <label className='ItemName'>Portfolio website <br></br>(UX & Frontend)</label>
+                        <label className='ItemSize'>26 KB</label>
+                    </Link>
 
+                    <Link className='ContentItemLink1' to='/PixelPlayground'>
+                        <div className='ContentImage' >
+                            <img className='AssignmentShot' src={AssignmentWork3}></img>
+                        </div>
+                        <label className='ItemName'>Pixel Playground <br></br>(UX & React)</label>
+                        <label className='ItemSize'>26 KB</label>
+                    </Link>
 
-                    {/*USE FOR LOOP LOGIC HERE FOR CONTENT*/}
-                
+                    <a className='ContentItemLink' href=''>
+                        <div className='ContentImage' >
+
+                        </div>
+                        <label className='ItemName'>Erion website <br></br>(UX & UI design)</label>
+                        <label className='ItemSize'>26 KB</label>
+                    </a>
+
+                    <Link className='ContentItemLink' to='/DystopianA'>
+                        <div className='ContentImage' >
+                        <img className='AssignmentShot4' src={AssignmentWork4}></img>
+                        </div>
+                        <label className='ItemName'>Distopian currency <br></br>(Media challenge)</label>
+                        <label className='ItemSize'>26 KB</label>
+                    </Link>
+
                 </div>
 
 
@@ -124,4 +144,4 @@ function Portfolio() {
     );
 }
 
-export default Portfolio;
+export default Progress;
