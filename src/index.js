@@ -12,6 +12,7 @@ import Work from './components/DystopianA.js'
 import WorkT from './components/PortfolioA.js'
 import WebshopA from './components/WebshopA.js'
 import PixelPlayground from './components/PixelPlaygroundA.js'
+import ErrorMessage from './components/ErrorMessage.js'
 //import { createRoot } from "react-dom/client";
 
 
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path='PortfolioA' element={<WorkT />}/>
       <Route path='WebshopA' element={<WebshopA/>}/>
       <Route path='PixelPlayground' element={<PixelPlayground/>}/>
+      <Route path= 'ErrorMessage' element={<ErrorMessage/>}/>
     </Route>
   )
 

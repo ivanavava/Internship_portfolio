@@ -13,7 +13,8 @@ import ScrollPort from '../images/ScrollPort.svg';
 import AssignmentWork1 from '../workcontent/Webshot.png'
 import AssignmentWork2 from '../workcontent/PortfolioScreenshot2.png';
 import AssignmentWork3 from '../workcontent/PixelPlaygroundShot.png';
-import AssignmentWork4 from '../workcontent/DystopianCurrency.png'
+import AssignmentWork4 from '../workcontent/Erion assignment/Erion assignment shot.png';
+import AssignmentWork5 from '../workcontent/DystopianCurrency.png'
 
 
 
@@ -116,17 +117,18 @@ function Progress() {
                         <label className='ItemSize'>26 KB</label>
                     </Link>
 
-                    <a className='ContentItemLink' href=''>
+                    <Link className='ContentItemLink' href=''>
                         <div className='ContentImage' >
-
+                        <img className='AssignmentShot4' src={AssignmentWork4}></img>
                         </div>
                         <label className='ItemName'>Erion website <br></br>(UX & UI design)</label>
                         <label className='ItemSize'>26 KB</label>
-                    </a>
+                    </Link>
+
 
                     <Link className='ContentItemLink' to='/DystopianA'>
                         <div className='ContentImage' >
-                        <img className='AssignmentShot4' src={AssignmentWork4}></img>
+                            <img className='AssignmentShot4' src={AssignmentWork5}></img>
                         </div>
                         <label className='ItemName'>Distopian currency <br></br>(Media challenge)</label>
                         <label className='ItemSize'>26 KB</label>

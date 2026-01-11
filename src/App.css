@@ -1313,7 +1313,135 @@ vertical-align:top;
   margin-left: -6.8vw;
  }
 
- 
+  /***********************************************ERROR MESSAGE********************************************/
+
+.ErroMessageWindow{
+position: relative;
+box-sizing: border-box;
+width: 40vw;
+height: 40vh;
+left: 145px;
+top: 90px;
+background: #FAFAFA;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+.ErrorGreyBox1{
+order:4;
+width: 9vw;
+height: 17px;
+background: rgba(217, 217, 217, 0.88);
+border-radius: 2px;
+margin-left: 0.3vw;
+}
+
+.ErrorGreyBox2{
+  order: 6;
+  background: rgba(217, 217, 217, 0.88);
+  border-radius: 2px;
+  width: 7vw;
+  height: 17px; 
+}
+
+
+.ErrorBoxTittle{
+  order:5;
+  font-family: 'Spline Sans Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 5vh;
+  letter-spacing:0.0em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  padding-left: 0vw;
+  padding-right: 0vw;
+  }
+
+  .EBttn{
+    width: 1.5vw;
+    padding-top: 5px;
+  }
+
+  .EGreenYellowRed{
+    order: 7;
+    margin-left: 0.1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.7vw;
+    margin-right: 0.1vw;
+  }
+
+  .ESeperationLine{
+    width: 100%;
+    border: #000000 solid 0.5px;
+    margin-top: 1vh;
+  
+  }
+
+  .ErrorContent{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ErrorIcon{
+    order: 1;
+    width: 8.2vw;
+    height: 22vh;
+    background-color: #D9D9D9;
+    border: solid 1px black;
+    margin-left: 4vw;
+    margin-top: 4.5vh;
+    border-radius: 5px;
+
+  }
+
+  .ErrorText{
+    order:2;
+    flex-direction: column;
+    width: 22vw;
+    padding-left: 2vw;
+  }
+
+  .ErrorTittle{
+    order:1;
+    font-family: var(--fontSpline);
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .ErrorExplanation{
+    order:2;
+    font-family: var(--fontInter);
+    font-size: 11px;
+    line-height: 180%;
+    letter-spacing: 3.5%;
+    text-align: justify;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

@@ -71,45 +71,49 @@ function App() {
 
                   <div className='IconFolder'>
 
-                    <Link className="MusicIcon" to="/music">
+                    <Link className="MusicIcon" to="/ErrorMessage">
                         <img className="Musicimg" src={MusicIcon}></img>
                         <p className="Musiclabel">Gaël Faye<br></br>Petit pays.mp3</p>
                       </Link>
 
-                    <Link className= "PhotoShopIcon"  to= "/progress">
+                    <Link className= "PhotoShopIcon"  to= "/ErrorMessage">
                         <img className="PhotoShopimg" src={PhtoShopIcon}></img>
                         <p className="PhotoShopLabel">Progress<br></br>Sofar</p>
                       </Link> 
 
-                      <Link className="ContactFolder" to="/contact">
+                      <Link className="ContactFolder" to="/ErrorMessage">
                           <img className="Contactimg" src={Contactimg}></img>
                           <p className="ContactLabel">CONTACT</p>
                       </Link>
 
                   </div>
+
+                  {/****************************PLACE PTHER PAGES IN DIV BELOW****************************/}
                    
-                    <div className='ThingInCenter'>
-                        <Outlet />
+                      <div className='ThingInCenter'>
+                          <Outlet />
                       </div>
 
-                    <div className="ColumnFolder">
+                  {/****************************PLACE OTHER PAGES IN DIV ABOVE****************************/}    
 
-                      <Link className="AboutmeHome" to="/about">
-                        <img className="AboutmeFolderHome" src={aboutFH}></img>
-                        <p className="AboutLabel">ABOUT ME</p>
-                      </Link>
-                    
-                      <Link className="PortfolioHome" to="/portfolio">
-                      <img className="PortfolioFolderHome" src={PortfolioFolder}></img>
-                      <p className="PortfolioLabel">PORTFOLIO</p>
-                      </Link>
+                      <div className="ColumnFolder">
 
-                      <Link className="ResumeHome" to="/resume">
-                        <img className="ResumeFolderHome" src={ResumeFolder}></img>
-                        <p className="ResumeLabel">RESUME</p>
-                      </Link>
+                        <Link className="AboutmeHome" to="/about">
+                          <img className="AboutmeFolderHome" src={aboutFH}></img>
+                          <p className="AboutLabel">ABOUT ME</p>
+                        </Link>
+                      
+                        <Link className="PortfolioHome" to="/portfolio">
+                        <img className="PortfolioFolderHome" src={PortfolioFolder}></img>
+                        <p className="PortfolioLabel">PORTFOLIO</p>
+                        </Link>
 
-                    </div>
+                        <Link className="ResumeHome" to="/resume">
+                          <img className="ResumeFolderHome" src={ResumeFolder}></img>
+                          <p className="ResumeLabel">RESUME</p>
+                        </Link>
+
+                      </div>
 
                    
 
