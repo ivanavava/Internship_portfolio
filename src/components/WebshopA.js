@@ -13,9 +13,13 @@ import Dropdown from '../images/dropdownfont.svg';
 
 
 import figport1 from '../workcontent/WebshopChallenge/Webshop Challenge.png';
-import figport2 from '../workcontent/2.png';
-import figport3 from '../workcontent/3.png';
-import figport4 from '../workcontent/4.png';
+import figport2 from '../workcontent/WebshopChallenge/Webshop Challenge1.png';
+import figport3 from '../workcontent/WebshopChallenge/Webshop Challenge2.png';
+import figport4 from '../workcontent/WebshopChallenge/Webshop Challenge3.png';
+import figport5 from '../workcontent/WebshopChallenge/Webshop Challenge4.png';
+import figport6 from '../workcontent/WebshopChallenge/Webshop Challenge5.png';
+import figport7 from '../workcontent/WebshopChallenge/Webshop Challenge6.png';
+import figport8 from '../workcontent/WebshopChallenge/Webshop Challenge7.png';
 
 //import Work1 from '../Dystopian currency assignment.pdf'
 
@@ -97,6 +101,10 @@ function WebshopA() {
                          <img className='Page2Work2' src= {figport2}></img>
                          <img className='Page3Work2' src= {figport3}></img>
                          <img className='Page4Work2' src= {figport4}></img>
+                         <img className='Page5Work2' src= {figport5}></img>
+                         <img className='Page6Work2' src= {figport6}></img>
+                         <img className='Page7Work2' src= {figport7}></img>
+                         <img className='Page8Work2' src= {figport8}></img>
                     </div>
 
                 </div>
