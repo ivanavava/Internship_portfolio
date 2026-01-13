@@ -117,7 +117,7 @@ function Progress() {
                         <label className='ItemSize'>26 KB</label>
                     </Link>
 
-                    <Link className='ContentItemLink' href=''>
+                    <Link className='ContentItemLink' to='/ErrorMessage'>
                         <div className='ContentImage' >
                         <img className='AssignmentShot4' src={AssignmentWork4}></img>
                         </div>
