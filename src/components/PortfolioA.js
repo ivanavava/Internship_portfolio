@@ -7,15 +7,20 @@ import YBttn from '../images/YellowWindowBttn.svg';
 import RBttn from '../images/RedWindowBttn.svg';
 import Save from '../images/SaveIcon.svg';
 import Dropdown from '../images/dropdownfont.svg';
+import LinksPagePort from '../workcontent/PortfolioAssignment/PortfolioLinks.pdf'
 
 // Add this at the top of your file (e.g., PdfViewer.jsx or App.jsx)
 
 
 
-import figport1 from '../workcontent/1.png';
-import figport2 from '../workcontent/2.png';
-import figport3 from '../workcontent/3.png';
-import figport4 from '../workcontent/4.png';
+import figport1 from '../workcontent/PortfolioAssignment/PORTFOLIO FIGMA WIREFRAMES1.png';
+import figport2 from '../workcontent/PortfolioAssignment/PORTFOLIO FIGMA WIREFRAMES2.png';
+import figport3 from '../workcontent/PortfolioAssignment/PORTFOLIO FIGMA WIREFRAMES3.png';
+import figport4 from '../workcontent/PortfolioAssignment/PORTFOLIO FIGMA WIREFRAMES4.png';
+import figport6 from '../workcontent/PortfolioAssignment/PORTFOLIO FIGMA WIREFRAMES6.png';
+import figport7 from '../workcontent/PortfolioAssignment/PORTFOLIO FIGMA WIREFRAMES7.png';
+import figport8 from '../workcontent/PortfolioAssignment/PORTFOLIO FIGMA WIREFRAMES8.png';
+
 
 //import Work1 from '../Dystopian currency assignment.pdf'
 
@@ -97,6 +102,13 @@ function WorkT() {
                          <img className='Page2Work2' src= {figport2}></img>
                          <img className='Page3Work2' src= {figport3}></img>
                          <img className='Page4Work2' src= {figport4}></img>
+                         <img className='Page6Work2' src= {figport6}></img>
+                         <img className='Page7Work2' src= {figport7}></img>
+                         <a className='linksToPortWork' href={LinksPagePort}  target="_blank" rel="noopener noreferrer">
+                             <img className='Page8Work2' src= {figport8}></img>
+                         </a>
+
+                         
                          
                     </div>
 

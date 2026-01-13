@@ -107,7 +107,7 @@ function WebshopA() {
                          <img className='Page6Work2' src= {figport6}></img>
                          <img className='Page7Work2' src= {figport7}></img>
                          <img className='Page8Work2' src= {figport8}></img>
-                         <a className='linksToWebWork' href={LinksPage}>
+                         <a className='linksToWebWork' href={LinksPage} target="_blank" rel="noopener noreferrer">
                              <img className='Page9Work2' src= {figport9}></img>
                          </a>
                     </div>
