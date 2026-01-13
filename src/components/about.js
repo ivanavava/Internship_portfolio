@@ -55,7 +55,7 @@ function About() {
 </p>
                             
                         <button className='GotIt'>
-                            <a className='LinkGotIt' href=''>GOT IT</a>
+                            <Link className='LinkGotIt' to='/'>GOT IT</Link>
                         </button>
                     </div>
 
