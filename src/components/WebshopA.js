@@ -7,6 +7,7 @@ import YBttn from '../images/YellowWindowBttn.svg';
 import RBttn from '../images/RedWindowBttn.svg';
 import Save from '../images/SaveIcon.svg';
 import Dropdown from '../images/dropdownfont.svg';
+import LinksPage from '../workcontent/WebshopChallenge/Webshop Links.pdf'
 
 // Add this at the top of your file (e.g., PdfViewer.jsx or App.jsx)
 
@@ -20,6 +21,7 @@ import figport5 from '../workcontent/WebshopChallenge/Webshop Challenge4.png';
 import figport6 from '../workcontent/WebshopChallenge/Webshop Challenge5.png';
 import figport7 from '../workcontent/WebshopChallenge/Webshop Challenge6.png';
 import figport8 from '../workcontent/WebshopChallenge/Webshop Challenge7.png';
+import figport9 from '../workcontent/WebshopChallenge/Webshop Challenge8.png';
 
 //import Work1 from '../Dystopian currency assignment.pdf'
 
@@ -105,6 +107,9 @@ function WebshopA() {
                          <img className='Page6Work2' src= {figport6}></img>
                          <img className='Page7Work2' src= {figport7}></img>
                          <img className='Page8Work2' src= {figport8}></img>
+                         <a className='linksToWebWork' href={LinksPage}>
+                             <img className='Page9Work2' src= {figport9}></img>
+                         </a>
                     </div>
 
                 </div>
