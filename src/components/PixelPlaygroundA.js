@@ -7,7 +7,7 @@ import YBttn from '../images/YellowWindowBttn.svg';
 import RBttn from '../images/RedWindowBttn.svg';
 import Save from '../images/SaveIcon.svg';
 import Dropdown from '../images/dropdownfont.svg';
-import LinksPagePixel from '../workcontent/PixelPlayground/PixelPlaygroundLinks.pdf';
+import LinksPagePixel from '../workcontent/PixelPlayground/PixelPlaygroundLinks.pdf'
 
 // Add this at the top of your file (e.g., PdfViewer.jsx or App.jsx)
 
