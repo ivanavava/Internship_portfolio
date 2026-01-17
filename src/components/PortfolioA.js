@@ -104,9 +104,9 @@ function WorkT() {
                          <img className='Page4Work2' src= {figport4}></img>
                          <img className='Page6Work2' src= {figport6}></img>
                          <img className='Page7Work2' src= {figport7}></img>
-                         <a className='linksToPortWork' href={LinksPagePort}  target="_blank" rel="noopener noreferrer">
+                         <Link className='linksToPortWork' to={LinksPagePort}  target="_blank" rel="noopener noreferrer">
                              <img className='Page8Work2' src= {figport8}></img>
-                         </a>
+                         </Link>
 
                          
                          
