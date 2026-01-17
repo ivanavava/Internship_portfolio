@@ -126,7 +126,7 @@ function App() {
         
          {/*------------------------footer/email thing below  ---------------------*/}
          <footer className="footer">
-            <a className="email">*****  Email: ivanaliza14@gmail.com     *     Email: ivanaliza14@gmail.com    *    Email: ivanaliza14@gmail.com  *****</a>
+            <Link className="email">*****  Email: ivanaliza14@gmail.com     *     Email: ivanaliza14@gmail.com    *    Email: ivanaliza14@gmail.com  *****</Link>
         </footer>
             
         </body>
